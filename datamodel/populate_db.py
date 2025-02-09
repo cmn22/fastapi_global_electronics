@@ -9,7 +9,7 @@ conn = sqlite3.connect(db_path)
 cursor = conn.cursor()
 
 # Load DataFrames from CSV files
-data_folder = "data"
+data_folder = "datamodel/data"
 dataframes = load_dataframes(data_folder)
 
 # Preprocess Products DataFrame
