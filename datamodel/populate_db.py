@@ -1,6 +1,6 @@
 import sqlite3
 from utils.data_loader import load_dataframes
-from utils.data_cleaner import preprocess_products, extract_categories_subcategories
+from utils.data_cleaner import preprocess_products, extract_categories_subcategories, normalize_date_format
 from utils.db_utils import insert_data
 
 # SQLite database connection
@@ -18,6 +18,13 @@ products_df = preprocess_products(dataframes["Products"])
 # Extract Categories and Subcategories
 categories = extract_categories_subcategories(products_df, "CategoryKey", "Category")
 subcategories = extract_categories_subcategories(products_df, "SubCategoryKey", "SubCategory")
+
+# Normalize date columns before inserting
+dataframes["Customers"] = normalize_date_format(dataframes["Customers"], "Birthday")
+dataframes["Sales"] = normalize_date_format(dataframes["Sales"], "OrderDate")
+dataframes["Sales"] = normalize_date_format(dataframes["Sales"], "DeliveryDate")
+dataframes["Stores"] = normalize_date_format(dataframes["Stores"], "OpenDate")
+dataframes["ExchangeRates"] = normalize_date_format(dataframes["ExchangeRates"], "Date")
 
 # Populate tables in the database
 insert_data(cursor, "Customers", dataframes["Customers"])
