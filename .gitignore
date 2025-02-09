@@ -1,0 +1,39 @@
+# Ignore Python bytecode and cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.cache
+*.pytest_cache/
+
+# Ignore virtual environment
+venv/
+.env/
+*.env
+
+# Ignore SQLite database and migrations
+*.db
+*.sqlite3
+Global_Electronics_Retailer.db
+
+# Ignore logs and debugging files
+logs/
+*.log
+nohup.out
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore VS Code settings and JetBrains IDE configs
+.vscode/
+.idea/
+
+# Ignore Python dependency files
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Ignore compiled Cython files
+*.so
+
+# Ignore data and CSV backups (optional, if needed)
+datamodel/data/*.csv
