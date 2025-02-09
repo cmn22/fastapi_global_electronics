@@ -104,12 +104,13 @@ POST	  /	            Create a new store.
 DELETE	/{store_id}	  Delete a store.
 
 ### Exchange Rates
-Method	Endpoint	          Description
-GET	    /	                  Get all exchange rates with pagination.
-GET	    /{date}/{currency}	Get exchange rate by date and currency.
-POST	  /	                  Create a new exchange rate entry.
-PUT	    /{date}/{currency}	Update an exchange rate entry.
-DELETE	/{date}/{currency}	Delete an exchange rate entry.
+| **Method** |    **Endpoint**    |             **Description**             |
+|:----------:|:------------------:|:---------------------------------------:|
+|     GET    | /                  | Get all exchange rates with pagination. |
+|     GET    | /{date}/{currency} | Get exchange rate by date and currency. |
+|    POST    | /                  | Create a new exchange rate entry.       |
+|     PUT    | /{date}/{currency} | Update an exchange rate entry.          |
+|   DELETE   | /{date}/{currency} | Delete an exchange rate entry.          |
 
 
 ## 🔮 Running API Tests
