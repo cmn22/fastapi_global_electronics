@@ -74,43 +74,47 @@ ReDoc: http://127.0.0.1:8000/redoc
 ## 📝 API Endpoints Overview
 
 ### Customers
-Method  Endpoint	      Description
-GET	    /	              Get all customers with pagination.
-GET	    /{customer_id}	Get a single customer by ID.
-POST	  /	              Create a new customer.
-PUT	    /{customer_id}	Update an existing customer.
-DELETE	/{customer_id}	Delete a customer.
+| **Method** | **Endpoint**   | **Description**                    |
+|------------|----------------|------------------------------------|
+| GET        | /              | Get all customers with pagination. |
+| GET        | /{customer_id} | Get a single customer by ID.       |
+| POST       | /              | Create a new customer.             |
+| PUT        | /{customer_id} | Update an existing customer.       |
+| DELETE     | /{customer_id} | Delete a customer.                 |
 
 ### Products
-Method	Endpoint	      Description
-GET	    /	              Get all products with pagination.
-GET	    /{product_id}	  Get a single product by ID.
-POST	  /	              Create a new product.
-PUT	    /{product_id}	  Update an existing product.
-DELETE	/{product_id}	  Delete a product.
+| **Method** | **Endpoint**  | **Description**                   |
+|------------|---------------|-----------------------------------|
+| GET        | /             | Get all products with pagination. |
+| GET        | /{product_id} | Get a single product by ID.       |
+| POST       | /             | Create a new product.             |
+| PUT        | /{product_id} | Update an existing product.       |
+| DELETE     | /{product_id} | Delete a product.                 |
 
 ### Sales
-Method	Endpoint	                    Description
-GET	    /	                            Get all sales with pagination.
-GET	    /{order_number}/{line_item}	  Get a sale by OrderNumber & LineItem.
-POST	  /	                            Create a new sale.
-DELETE	/{order_number}/{line_item}	  Delete a sale.
+| **Method** | **Endpoint**                | **Description**                       |
+|------------|-----------------------------|---------------------------------------|
+| GET        | /                           | Get all sales with pagination.        |
+| GET        | /{order_number}/{line_item} | Get a sale by OrderNumber & LineItem. |
+| POST       | /                           | Create a new sale.                    |
+| DELETE     | /{order_number}/{line_item} | Delete a sale.                        |
 
 ### Stores
-Method	Endpoint	    Description
-GET	    /	            Get all stores with pagination.
-GET	    /{store_id}	  Get a store by ID.
-POST	  /	            Create a new store.
-DELETE	/{store_id}	  Delete a store.
+| **Method** | **Endpoint**       | **Description**                 |
+|------------|--------------------|---------------------------------|
+| GET        | /                  | Get all stores with pagination. |
+| GET        | /{store_id}        | Get a store by ID.              |
+| POST       | /                  | Create a new store.             |
+| DELETE     | /{store_id}        | Delete a store.                 |
 
 ### Exchange Rates
-| **Method** |    **Endpoint**    |             **Description**             |
-|:----------:|:------------------:|:---------------------------------------:|
-|     GET    | /                  | Get all exchange rates with pagination. |
-|     GET    | /{date}/{currency} | Get exchange rate by date and currency. |
-|    POST    | /                  | Create a new exchange rate entry.       |
-|     PUT    | /{date}/{currency} | Update an exchange rate entry.          |
-|   DELETE   | /{date}/{currency} | Delete an exchange rate entry.          |
+| **Method** | **Endpoint**       | **Description**                         |
+|------------|--------------------|-----------------------------------------|
+| GET        | /                  | Get all exchange rates with pagination. |
+| GET        | /{date}/{currency} | Get exchange rate by date and currency. |
+| POST       | /                  | Create a new exchange rate entry.       |
+| PUT        | /{date}/{currency} | Update an exchange rate entry.          |
+| DELETE     | /{date}/{currency} | Delete an exchange rate entry.          |
 
 
 ## 🔮 Running API Tests
